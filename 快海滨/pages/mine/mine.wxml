@@ -1,0 +1,13 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+    <view class="userinfo">
+        <image class="userinfo-avatar" 
+               src="{{userInfo.avatarUrl}}" 
+               mode="cover"></image> 
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view class="order">
+        <button class="my" bindtap="handleMy">我发布的</button>
+        <button class="their" bindtap="handleTheir">我接收的</button>
+    </view>
+</view>

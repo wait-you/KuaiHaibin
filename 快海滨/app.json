@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/publish/publish",
+    "pages/mine/mine",
+    "pages/logs/logs",
+    "pages/my/my",
+    "pages/their/their",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#90f3f0",
+    "navigationBarTitleText": "海滨快生活",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#dfe4ea",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/tabbar/home1.png",
+        "selectedIconPath": "assets/tabbar/home2.png"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布",
+        "iconPath": "assets/tabbar/publish.png",
+        "selectedIconPath": "assets/tabbar/publish.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "assets/tabbar/mine1.png",
+        "selectedIconPath": "assets/tabbar/mine2.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

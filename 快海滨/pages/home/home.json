@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-swiper":"/components/my-swiper/my-swiper",
+    "tab-control":"/components/my-tab-control/my-tab-control"
+  },
+  "navigationBarTitleText": "首页"
+}

@@ -1,0 +1,29 @@
+/* pages/mine/mine.wxss */
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinfo-avatar {
+     width: 128rpx;
+    height: 128rpx;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: #aaa;
+}
+.order{
+  width: 400px;
+  height: 400px;
+  text-align: center;
+}
+.my{
+  margin: 20px;
+  border: 5rpx #000 solid ;
+}
+.their{
+  border: 5rpx #000 solid ;
+}

@@ -1,0 +1,98 @@
+/* pages/publish/publish.wxss */
+.swiper-tab{
+    width: 100%;
+    text-align: center;
+    line-height: 80rpx;
+}
+.swiper-tab-list{  
+    font-size: 40rpx;
+    font-weight: 700;
+    display: inline-block;
+    width: 50%;
+    color: #777777;
+}
+.on{ 
+  color:#40407a;
+  border-bottom: 6rpx solid #40407a;
+}
+
+.swiper-box{ 
+  display: block; height: 100%; width: 100%; overflow: hidden;
+}
+
+.publish-container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.publish-input {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  top: 4.3px;
+  width: 125px;
+}
+
+.publish-bottom {
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.list-msg {
+    padding: 0 20rpx;
+    position: relative;
+}
+ 
+.list-msg .place {
+  margin-left: 0;
+  margin-right: 50px;
+}
+
+.list-msg {
+    height: 60rpx;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 0 10rpx;
+}
+ 
+.select_box {
+    background-color: #eee;
+    padding: 0 10rpx;
+    width: 50%;
+    position: absolute;
+    top: 63rpx;
+    left: 120px;
+    z-index: 9;
+    overflow: hidden;
+    animation: myfirst 0.5s;
+}
+ 
+@keyframes myfirst {
+    from {
+        height: 0rpx;
+    }
+ 
+    to {
+        height: 210rpx;
+    }
+}
+ 
+.select_one {
+    height: 60rpx;
+    line-height: 60rpx;
+    border-bottom: 1px solid #ccc;
+}
+
+.publish-container .publish-form .desc {
+  border: 1px solid #999;
+  height: 50px;
+}
+
+.publish-container .publish-form .box {
+  position: relative;
+  top: 20px;
+  line-height: 35px;
+  width: 200px;
+  height: 50px;
+}

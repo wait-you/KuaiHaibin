@@ -1,0 +1,3 @@
+<!--pages/home/home.wxml-->
+<my-swiper></my-swiper>
+<tab-control titles="{{['食堂','超市','租车']}}" />

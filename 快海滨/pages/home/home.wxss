@@ -1,0 +1,14 @@
+/* pages/home/home.wxss */
+.circle{
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+.recom1,.recom2,.recom3,.recom4{
+  display: block;
+}
+.photo{
+  text-align: center;
+  position: relative;
+  top: 80px;
+}

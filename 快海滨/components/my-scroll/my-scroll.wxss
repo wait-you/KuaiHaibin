@@ -1,0 +1,8 @@
+/* components/my-scroll/my-scroll.wxss */
+.container{
+  width: 100px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  background-color: #ededed;
+}

@@ -1,0 +1,154 @@
+<!--pages/publish/publish.wxml-->
+<view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" 
+          data-current="0" 
+          bindtap="swichNav">
+          代购
+    </view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" 
+          data-current="1" 
+          bindtap="swichNav">
+          租车
+    </view>
+</view>
+  <swiper current="{{currentTab}}" 
+          class="swiper-box" 
+          duration="300" 
+          style="height:{{winHeight - 31}}px" 
+          bindchange="bindChange">
+  <swiper-item>
+    <view class="publish-container">
+      <form class="publish-form">
+          <span>代购商品名称：</span>
+          <input class="publish-input" placeholder="如：宫保鸡丁"></input>
+          <view class="publish-bottom"></view>
+
+          <span>代购费用：</span>
+          <input class="publish-input" placeholder="如：1元"></input>
+          <view class="publish-bottom"></view>
+          
+          <view class='list-msg'>
+          <span class="place">代购地点:</span>
+          <!--下拉框  -->
+                <view class='list-msg2' bindtap='bindShowMsg'>
+                    <text>{{tihuoWay}}</text>
+                </view>
+          <!-- 下拉需要显示的列表 -->
+                <view class="select_box" wx:if="{{select}}">
+                    <view class="select_one" 
+                          bindtap="mySelect" 
+                          data-name="超市一">
+                          超市一
+                    </view>
+                    <view class="select_one" 
+                          bindtap="mySelect" 
+                          data-name="超市二">
+                          超市二
+                    </view>
+                    <view class="select_one" 
+                          bindtap="mySelect" 
+                          data-name="超市三">
+                          超市三
+                    </view>
+                    <view class="select_one" 
+                          bindtap="mySelect" 
+                          data-name="超市四">
+                          超市四
+                    </view>
+                    <view class="select_one" 
+                          bindtap="mySelect" 
+                          data-name="一期食堂">
+                          一期食堂
+                    </view>
+                    <view class="select_one" 
+                          bindtap="mySelect" 
+                          data-name="二期食堂">
+                          二期食堂
+                    </view>
+                    <view class="select_one" 
+                          bindtap="mySelect" 
+                          data-name="教师食堂">
+                          教师食堂
+                    </view>
+                </view>
+          </view>
+          <view class="publish-bottom"></view>
+          <span>联系方式</span>
+          <input class="publish-input" placeholder="如：qq:123456"></input>
+          <view class="publish-bottom"></view>
+
+          <span>详细描述:</span>
+          <textarea class="desc" placeholder="如：是否加饭"></textarea>
+          <button type="primary" form-type="submit" class="box">发布</button>
+      </form>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="publish-container">
+      <form class="publish-form">
+          <span>代购商品名称：</span>
+          <input class="publish-input" placeholder="如：宫保鸡丁"></input>
+          <view class="publish-bottom"></view>
+
+          <span>代购费用：</span>
+          <input class="publish-input" placeholder="如：1元"></input>
+          <view class="publish-bottom"></view>
+          
+          <view class='list-msg'>
+          <span class="place">代购地点:</span>
+          <!--下拉框  -->
+                <view class='list-msg2' bindtap='bindShowMsg'>
+                    <text>{{tihuoWay}}</text>
+                </view>
+          <!-- 下拉需要显示的列表 -->
+                <view class="select_box" wx:if="{{select}}">
+                    <view class="select_one" 
+                          bindtap="mySelect" 
+                          data-name="超市一">
+                          超市一
+                    </view>
+                    <view class="select_one" 
+                          bindtap="mySelect" 
+                          data-name="超市二">
+                          超市二
+                    </view>
+                    <view class="select_one" 
+                          bindtap="mySelect" 
+                          data-name="超市三">
+                          超市三
+                    </view>
+                    <view class="select_one" 
+                          bindtap="mySelect" 
+                          data-name="超市四">
+                          超市四
+                    </view>
+                    <view class="select_one" 
+                          bindtap="mySelect" 
+                          data-name="一期食堂">
+                          一期食堂
+                    </view>
+                    <view class="select_one" 
+                          bindtap="mySelect" 
+                          data-name="二期食堂">
+                          二期食堂
+                    </view>
+                    <view class="select_one" 
+                          bindtap="mySelect" 
+                          data-name="教师食堂">
+                          教师食堂
+                    </view>
+                </view>
+          </view>
+          <view class="publish-bottom"></view>
+          
+          <span>联系方式</span>
+          <input class="publish-input" placeholder="如：qq:123456"></input>
+          <view class="publish-bottom"></view>
+
+          <span>详细描述:</span>
+          <textarea class="desc" placeholder="如：是否加饭"></textarea>
+          <button type="primary" form-type="submit" class="box">发布</button>
+      </form>
+    </view>
+  </swiper-item>
+</swiper>
